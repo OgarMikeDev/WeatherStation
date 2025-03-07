@@ -50,7 +50,10 @@ public class WeatherData implements Subject {
 
             String[] linesHtmlCode = htmlCodeText.split("\n");
             for (String currentLineHtmlCode : linesHtmlCode) {
+                currentLineHtmlCode = currentLineHtmlCode.strip();
                 getValuePressure(currentLineHtmlCode);
+                getValueHumidity(currentLineHtmlCode);
+                getValueTemperature(currentLineHtmlCode);
             }
 
         } catch (Exception ex) {
@@ -67,6 +70,31 @@ public class WeatherData implements Subject {
             int rightIndexForPressure = line.indexOf("\"", leftIndexForPressure);
             String pressureValue = line.substring(leftIndexForPressure, rightIndexForPressure);
             System.out.println("Давление \"" + pressureValue + "\"");
+            temperature = Float.parseFloat(pressureValue);
+        }
+    }
+
+    public void getValueHumidity(String line) {
+        String templateForHumidity = "\"humidity\":[";
+        int leftIndexForHumidity = line.indexOf(templateForHumidity);
+        if (leftIndexForHumidity != -1) {
+            leftIndexForHumidity += templateForHumidity.length();
+            int rightIndexForHumidity = line.indexOf("]", leftIndexForHumidity);
+            String humidityValue = line.substring(leftIndexForHumidity, rightIndexForHumidity);
+            System.out.println("Влажность \"" + humidityValue + "\"");
+            humidity = Float.parseFloat(humidityValue);
+        }
+    }
+
+    public void getValueTemperature(String line) {
+        String templateForTemperature = "\"temperatureAir\":[";
+        int leftIndexForTemperature = line.indexOf(templateForTemperature);
+        if (leftIndexForTemperature != -1) {
+            leftIndexForTemperature += templateForTemperature.length();
+            int rightIndexForTemperature = line.indexOf("]", leftIndexForTemperature);
+            String temperatureValue = line.substring(leftIndexForTemperature, rightIndexForTemperature);
+            System.out.println("Температура \"" + temperatureValue + "\"");
+            temperature = Float.parseFloat(temperatureValue);
         }
     }
 
