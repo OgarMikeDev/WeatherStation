@@ -42,14 +42,7 @@ public class WeatherData implements Subject {
         String urlSiteWeather = "https://www.gismeteo.ru/weather-sochi-5233/now/";
         String pathToFileWithHtmlCode = "data/htmlSiteForWeather.html";
         try {
-            Document document = Jsoup.connect(urlSiteWeather).get();
-            String htmlCodeText = String.valueOf(document);
-            FileWriter fileWriter = new FileWriter(pathToFileWithHtmlCode);
-            fileWriter.write(htmlCodeText);
 
-
-            Elements partWithWeatherData = document.select(".now-info");
-            System.out.println("Path weather: \n\"" + String.valueOf(partWithWeatherData) + "\"\n");
         } catch (Exception ex) {
             ex.getMessage();
         }
