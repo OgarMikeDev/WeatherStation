@@ -42,12 +42,34 @@ public class WeatherData implements Subject {
         String urlSiteWeather = "https://www.gismeteo.ru/weather-sochi-5233/now/";
         String pathToFileWithHtmlCode = "data/htmlSiteForWeather.html";
         try {
+            Document document = Jsoup.connect(urlSiteWeather).get();
+            String htmlCodeText = String.valueOf(document);
+            FileWriter fileWriter = new FileWriter(pathToFileWithHtmlCode);
+            fileWriter.write(htmlCodeText);
+
+
+            String[] linesHtmlCode = htmlCodeText.split("\n");
+            for (String currentLineHtmlCode : linesHtmlCode) {
+                getValuePressure(currentLineHtmlCode);
+            }
 
         } catch (Exception ex) {
             ex.getMessage();
         }
         measurementsChanged();
     }
+
+    public void getValuePressure(String line) {
+        String templateForPressure = "<pressure-value value=\"";
+        int leftIndexForPressure = line.indexOf(templateForPressure);
+        if (leftIndexForPressure != -1) {
+            leftIndexForPressure += templateForPressure.length();
+            int rightIndexForPressure = line.indexOf("\"", leftIndexForPressure);
+            String pressureValue = line.substring(leftIndexForPressure, rightIndexForPressure);
+            System.out.println("Давление \"" + pressureValue + "\"");
+        }
+    }
+
 
     @Override
     public void registerObserver(Observer observer) {
