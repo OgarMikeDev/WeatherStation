@@ -40,14 +40,14 @@
   <script>window.M = window.M || {}
     window.M.fn = {}
     
-    window.M.state = {"assets":{"url":"https://st.gismeteo.st/ui-gm/assets/","path":"https://st.gismeteo.st"},"app":{"lang":"ru","links":{"lang":null,"prefix":"","weather":"/weather-sochi-5233/","withoutPrefix":"/weather-sochi-5233/10-days/","withPrefix":"weather-sochi-5233","original":"/weather-sochi-5233/10-days/","canonical":"https://www.gismeteo.ru/weather-sochi-5233/10-days/","query":{}},"domain":"ru","subdomain":"www","layout":"desktop","project":"weather","version":"nx-gm-master","weatherType":"10-days","forecastType":"h24","day":1,"X":0,"dc":"","uniq":"","build":"","page":"","device":{"type":"desktop","origin":"desktop"},"timestamps":{"now":null,"local":null},"cache":{"date":"03.04.2025 11:35:54 (UTC)"},"projects":{"news":true},"counters":{"ym":[]},"store":{"nowcast":{"activeIndex":0,"length":0},"static":{}},"debug":{}},"advert":{"puids":{},"pubads":[],"slots":null},"city":{"id":5233,"kind":"T","slug":"sochi","coordinates":{"latitude":43.58799,"longitude":39.723141},"obsStationId":13606,"timeZone":180,"country":{"id":156,"slug":"russia","code":"RU"},"district":{"id":282,"slug":"krasnodar-krai"},"subdistrict":{"id":2531,"slug":"urban-district-sochi"},"translations":{"ru":{"city":{"name":"Сочи","nameP":"в Сочи","nameR":""},"country":{"name":"Россия","nameP":"в России","nameR":"России"},"district":{"name":"Краснодарский край","nameP":"в Краснодарском крае","nameR":"Краснодарского края"},"subdistrict":{"name":"городской округ Сочи","nameP":"в городском округе Сочи","nameR":"городского округа Сочи"}}},"options":{"mrlExists":true,"significantHeightDiff":false,"landSeaMask":49},"meta":{"nowcast":true,"allergy":{"birch":true,"grass":false,"ragweed":false}}},"weather":{"cw":{"colorBackground":["d-c3"],"description":["Пасмурно,  дождь"],"humidity":[89],"pressure":[759],"precipitation":[0.95],"radiation":[0],"range":[0,1],"temperatureAir":[14],"temperatureHeatIndex":[14],"temperatureWater":[11],"windDirection":[209],"windSpeed":[2],"windGust":[4],"date":["2025-04-03T11:00:00.000Z"],"iconWeather":["d_c3_r2"]},"schema":[{"key":"datetime","title":"","hasPromo":false,"forecasts":["h3"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"date-sticky","title":"","hasPromo":false,"forecasts":["h1"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"tod","title":"","hasPromo":false,"forecasts":["h6"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"date","title":"","hasPromo":false,"forecasts":["h24"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"icon-tooltip","title":"","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"temperature-air","title":"Температура воздуха","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"dynamicMeasure":"<temperature-value reactive show-units></temperature-value>","parts":[]},{"key":"temperature-heat-index","title":"Температура по ощущению","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"dynamicMeasure":"<temperature-value reactive show-units></temperature-value>","parts":[]},{"key":"temperature-avg","title":"Среднесуточная температура","hasPromo":false,"forecasts":["h24"],"status":"on","trigger":{"status":"hold","priority":1},"dynamicMeasure":"<temperature-value reactive show-units></temperature-value>","parts":[]},{"key":"wind","title":"Ветер и порывы","info":{"articleLink":"/mq/ru/wiki/wind-speed-and-gust/","legend":"wind"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"captionVars":[{"title":"Ветер и порывы","keys":[["wind-speed","wind-direction","wind-gust"],["wind-speed","wind-gust"]]},{"title":"Средняя скорость ветра","keys":[["wind-speed"],["wind-speed","wind-direction"]]},{"title":"Порывы ветра","keys":[["wind-gust"]]}],"dynamicMeasure":"<speed-value reactive show-units/>","parts":[{"key":"wind-speed","title":"Ветер","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"switcherGroup":1},{"key":"wind-direction","title":"Направление","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"dependsOn":["wind-speed"],"switcherGroup":1},{"key":"wind-gust","title":"Порывы ветра","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"switcherGroup":2}]},{"key":"pollen-birch","title":"Пыльца берёзы","info":{"articleLink":"/mq/ru/wiki/pollen-birch/","legend":"pollen"},"services":[{"title":"Пыльца на карте","link":"/maps/allergy"}],"hasPromo":false,"forecasts":["h3","h6","h24"],"status":"on","trigger":{"status":"hide","priority":3},"parts":[]},{"key":"pollen-grass","title":"Пыльца злаковых трав","info":{"articleLink":"/mq/ru/wiki/pollen-grass/","legend":"pollen"},"hasPromo":false,"forecasts":["h3","h6","h24"],"status":"on","trigger":{"status":"hide","priority":4},"parts":[]},{"key":"pollen-ragweed","title":"Пыльца амброзии","hasPromo":false,"forecasts":["h3","h6","h24"],"status":"off","trigger":{"status":"hold","priority":5},"parts":[]},{"key":"precipitation-bars","title":"Осадки в жидком эквиваленте","info":{"articleLink":"/mq/ru/wiki/precipitation-bars/"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"precipitation-probability","title":"Вероятность осадков","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"off","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"icon-snow","title":"Выпадающий снег","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":6},"parts":[]},{"key":"snow-height","title":"Высота снежного покрова","info":{"articleLink":"/mq/ru/wiki/snow-height/"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hide","priority":7},"parts":[]},{"key":"roadcondition","title":"Погода на дорогах","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"off","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"pressure","title":"Давление","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"humidity","title":"Относительная влажность","hasPromo":false,"forecasts":["h1","h3","h6"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"humidity-avg","title":"Относительная влажность (среднесуточная)","hasPromo":false,"forecasts":["h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"radiation","title":"УФ-индекс","info":{"articleLink":"/mq/ru/wiki/radiation/","legend":"radiation"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"geomagnetic","title":"Г/м активность","info":{"articleLink":"/mq/ru/wiki/geomagnetic/","legend":"geomagnetic"},"hasPromo":false,"forecasts":["h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]}]},"abtests":{"group":0,"abGroups":[],"cookie":"ab_audience_3","current":[],"tests":[{"disabled":false,"version":"V1","name":"NG-1049","audience":{"test":[1,5],"control":[51,55]}}]},"menu":{"burger":[{"key":"index","isActive":false,"project":"weather","title":"Главная","attention":false,"url":"/"},{"key":"nowcast","isActive":false,"project":"weather","title":"Радар","attention":false,"url":"/nowcast-sochi-5233/"},{"key":"now","isActive":false,"project":"weather","title":"Сейчас","attention":false,"url":"/weather-sochi-5233/now/"},{"key":"hourly","isActive":false,"project":"weather","title":"По часам","attention":false,"url":"/weather-sochi-5233/hourly/"},{"key":"today","isActive":false,"project":"weather","title":"Сегодня","attention":false,"url":"/weather-sochi-5233/"},{"key":"tomorrow","isActive":false,"project":"weather","title":"Завтра","attention":false,"url":"/weather-sochi-5233/tomorrow/"},{"key":"3-days","isActive":false,"project":"weather","title":"3 дня","attention":false,"url":"/weather-sochi-5233/3-days/"},{"key":"weekend","isActive":false,"project":"weather","title":"Выходные","attention":false,"url":"/weather-sochi-5233/weekend/"},{"key":"weekly","isActive":false,"project":"weather","title":"Неделя","attention":false,"url":"/weather-sochi-5233/weekly/"},{"key":"10-days","isActive":true,"project":"weather","title":"10&nbsp;дней","attention":false,"url":"/weather-sochi-5233/10-days/"},{"key":"2-weeks","isActive":false,"project":"weather","title":"2&nbsp;недели","attention":false,"url":"/weather-sochi-5233/2-weeks/"},{"key":"month","isActive":false,"project":"weather","title":"Месяц","attention":false,"url":"/weather-sochi-5233/month/"},{"key":"gm","isActive":false,"project":"weather","title":"Г/м активность","attention":false,"url":"/weather-sochi-5233/gm/"},{"key":"statistics","isActive":false,"project":"weather","title":"Статистика","attention":false,"url":"/weather-sochi-5233/statistics/"}],"burgerNews":[{"key":"news","isActive":false,"project":"news","title":"Новости","attention":false,"url":"/news/"},{"key":"weather","isActive":false,"project":"news","title":"О погоде","attention":false,"url":"/news/weather/"},{"key":"science","isActive":false,"project":"news","title":"Наука и космос","attention":false,"url":"/news/science/"},{"key":"nature","isActive":false,"project":"news","title":"Природа","attention":false,"url":"/news/nature/"},{"key":"animals","isActive":false,"project":"news","title":"Животные","attention":false,"url":"/news/animals/"},{"key":"auto","isActive":false,"project":"news","title":"Авто","attention":false,"url":"/news/auto/"},{"key":"health","isActive":false,"project":"news","title":"Здоровье","attention":false,"url":"/news/health/"}],"footer":[{"key":"agreement","isActive":false,"project":"about","title":"Соглашение","attention":false,"url":"/page/agreement/"},{"key":"recommendations","isActive":false,"project":"about","title":"Рекомендательные технологии","attention":false,"url":"/page/recommendations/"},{"key":"adv","isActive":false,"project":"about","title":"Размещение рекламы","attention":false,"url":"/page/adv/"},{"key":"contacts","isActive":false,"project":"about","title":"Контакты","attention":false,"url":"/page/contacts/"}],"languages":[{"key":"ru","isActive":false,"project":"all","title":"По-русски","attention":false,"url":"/weather-sochi-5233/10-days/"}],"categories":[{"key":"weather","isActive":false,"project":"news","title":"О погоде","attention":false,"url":"/news/weather/"},{"key":"science","isActive":false,"project":"news","title":"Наука и космос","attention":false,"url":"/news/science/"},{"key":"nature","isActive":false,"project":"news","title":"Природа","attention":false,"url":"/news/nature/"},{"key":"animals","isActive":false,"project":"news","title":"Животные","attention":false,"url":"/news/animals/"},{"key":"auto","isActive":false,"project":"news","title":"Авто","attention":false,"url":"/news/auto/"},{"key":"health","isActive":false,"project":"news","title":"Здоровье","attention":false,"url":"/news/health/"}]},"dictionary":{"actions":{"add":"Добавить в прогноз","cancel":"Отмена","clear":"Очистить","close":"Закрыть","dismiss":"Оставить","feedback":"Оставить отзыв","fullversion":"Для больших экранов","geoConfirm":"Разрешите определить ваше местоположение","hideTeaser":"Скрыть подсказку","loading":"Загрузка...","mobile-site":"Мобильный сайт","mobileVersion":"Перейти на мобильную версию","nowcast":"Смотрите осадки<br />на карте","open-menu":"Открыть меню","open-search":"Открыть поиск","pollen-on-map":"Пыльца на карте","print":"Распечатать...","remove":"Убрать из прогноза","search":"Поиск местоположения","searchGeoProcess":"Определение местоположения","searchPlaceholder":"Поиск местоположения"},"city":{"names":{"airport":"{CITY_NAME} аэропорт","city":"{CITY_NAME}"},"popularTitle":"Популярные пункты","viewTitle":"Просмотренные"},"declensions":{"mph":{"0":"миля/ч","1":"мили/ч","2":"миль/ч"}},"info":{"more":"Подробнее о параметре","precipitation-extended":"Часовые столбики в днях","precipitation-extended-desc":"Для оценки интенсивности осадков","toggle":"Отображать в прогнозе","no-data":"Нет данных","no-data-extended":"Данные уточняются.","check-again":"Пожалуйста, зайдите чуть позже."},"informers":{"pollen-birch-add":"Идёт сезон цветения берёзы. Следите за аллергеном","pollen-grass-add":"Идёт сезон цветения злаков. Следите за аллергеном","pollen-ragweed-add":"Идёт сезон цветения амброзии. Следите за аллергеном","pollen-map":"Смотрите за активностью аллергенов на карте","pollen-remove":"Снизилась концентрация пыльцы в воздухе","snow-add":"Смотрите как меняется высота снежного покрова","snow-remove":"Похоже, что снег не лежит и в ближайшее время не выпадет"},"map":{"region":{"sib":{"nameR":"Сибири","name":"Сибирь","nameP":"в Сибири"},"feru":{"nameR":"Дальнего Востока","name":"Дальний Восток","nameP":"на Дальнем Востоке"},"eur":{"nameR":"Европы","name":"Европа","nameP":"в Европе"}},"type":{"clou":{"name":"облачность","nameP":"облачности"},"prc":{"name":"осадки","nameP":"осадков"},"temp":{"name":"температура","nameP":"температуры"},"wind":{"name":"ветер","nameP":"ветра"}},"interactive":{"nowcast":"Осадки","birch":"Берёза","grass":"Злаки","ragweed":"Амброзия","group":{"allergy":"Пыльца"}}},"measureUnits":{"c":"°C","f":"°F","cm":"см","hpa":"гПа","hour":"ч","km":"км","kmh":"км/ч","mph":"миля/ч","kp_index":"Кп-индекс","m":"м","ms":"м/c","max":"Макс","min":"Мин","minute":"мин","mm":"мм","mmhg":"мм рт. ст.","nodata":"н/д","percent":"%","point":"балл","point_m3":"ед./м<sup>3</sup>","points":"баллы"},"menuTabs":{"weather":"Погода","news":"Новости","about":"О Компании"},"search":{"allWorld":"Весь мир","citiesTitle":"Пункты","countries":"Страны","favoritesTitle":"Избранные пункты","findAll":"Найти все пункты","ipTitle":"Ближайшие пункты по IP-адресу","lastViewed":"Вы недавно смотрели","myCities":"Мои пункты","nearest":"Поблизости","notFound":"Ничего не найдено","onQuery":"По запросу &laquo;{QUERY}&raquo; найдено {TOTAL} {PLACES}","settlements":"Населённые пункты","viewedTitle":"Просмотренные"},"widgetsParams":{"description":"Выберите параметры, которые хотите видеть в прогнозе","reset":"Вернуть вид по умолчанию","settings":"Набор данных","teaser":"<b>Что нового:</b> теперь можно настраивать прогноз","tips":{"0":"Тут можно убрать или добавить параметры для прогноза","1":"Настройте прогноз по вашим интересам","2":"Геомагнитное поле, влажность, УФ-индекс и другие параметры","3":"Выберите параметры, которые хотите видеть в прогнозе"},"title":"Набор данных в прогнозе"},"legends":{"gm":{"title":"Геомагнитная активность","value":{"0":"Возмущения отсутствуют","1":"Небольшие возмущения","2":"Небольшие возмущения","3":"Небольшие возмущения","4":"Небольшие возмущения","5":"Слабая буря","6":"Умеренная буря","7":"Сильная буря","8":"Шторм","9":"Экстремальный шторм"}},"nowcast":{"title":"Интенсивность осадков","value":{"1":"Осадки","2":"Гроза","3":"Град"}},"pollen":{"title":"Пыльца","value":{"0":"Незначительная","1":"Низкая","2":"Умеренная","3":"Высокая","4":"Очень высокая","5":"Экстремальная"}},"radiation":{"title":"УФ-индекс","value":{"2":"Низкий","5":"Умеренный","7":"Высокий","10":"Очень высокий","11":"Экстремальный"}},"wind":{"value":{"0":"Штиль","1":"Слабый","5":"Умеренный","10":"Сильный","15":"Очень сильный","20":"Шторм","25":"Сильный шторм","33":"Ураган","-1":"Нет данных"}}}},"profile":{"user":null,"userSettings":null}}</script>
+    window.M.state = {"assets":{"url":"https://st.gismeteo.st/ui-gm/assets/","path":"https://st.gismeteo.st"},"app":{"lang":"ru","links":{"lang":null,"prefix":"","weather":"/weather-sochi-5233/","withoutPrefix":"/weather-sochi-5233/10-days/","withPrefix":"weather-sochi-5233","original":"/weather-sochi-5233/10-days/","canonical":"https://www.gismeteo.ru/weather-sochi-5233/10-days/","query":{}},"domain":"ru","subdomain":"www","layout":"desktop","project":"weather","version":"nx-gm-master","weatherType":"10-days","forecastType":"h24","day":1,"X":0,"dc":"","uniq":"","build":"","page":"","device":{"type":"desktop","origin":"desktop"},"timestamps":{"now":null,"local":null},"cache":{"date":"03.04.2025 11:39:13 (UTC)"},"projects":{"news":true},"counters":{"ym":[]},"store":{"nowcast":{"activeIndex":0,"length":0},"static":{}},"debug":{}},"advert":{"puids":{},"pubads":[],"slots":null},"city":{"id":5233,"kind":"T","slug":"sochi","coordinates":{"latitude":43.58799,"longitude":39.723141},"obsStationId":13606,"timeZone":180,"country":{"id":156,"slug":"russia","code":"RU"},"district":{"id":282,"slug":"krasnodar-krai"},"subdistrict":{"id":2531,"slug":"urban-district-sochi"},"translations":{"ru":{"city":{"name":"Сочи","nameP":"в Сочи","nameR":""},"country":{"name":"Россия","nameP":"в России","nameR":"России"},"district":{"name":"Краснодарский край","nameP":"в Краснодарском крае","nameR":"Краснодарского края"},"subdistrict":{"name":"городской округ Сочи","nameP":"в городском округе Сочи","nameR":"городского округа Сочи"}}},"options":{"mrlExists":true,"significantHeightDiff":false,"landSeaMask":49},"meta":{"nowcast":true,"allergy":{"birch":true,"grass":false,"ragweed":false}}},"weather":{"cw":{"colorBackground":["d-c3"],"description":["Пасмурно,  дождь"],"humidity":[89],"pressure":[759],"precipitation":[0.95],"radiation":[0],"range":[0,1],"temperatureAir":[14],"temperatureHeatIndex":[14],"temperatureWater":[11],"windDirection":[209],"windSpeed":[2],"windGust":[4],"date":["2025-04-03T11:00:00.000Z"],"iconWeather":["d_c3_r2"]},"schema":[{"key":"datetime","title":"","hasPromo":false,"forecasts":["h3"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"date-sticky","title":"","hasPromo":false,"forecasts":["h1"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"tod","title":"","hasPromo":false,"forecasts":["h6"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"date","title":"","hasPromo":false,"forecasts":["h24"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"icon-tooltip","title":"","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"always","trigger":{"status":"hold","priority":1},"dynamicMeasure":"","parts":[]},{"key":"temperature-air","title":"Температура воздуха","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"dynamicMeasure":"<temperature-value reactive show-units></temperature-value>","parts":[]},{"key":"temperature-heat-index","title":"Температура по ощущению","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"dynamicMeasure":"<temperature-value reactive show-units></temperature-value>","parts":[]},{"key":"temperature-avg","title":"Среднесуточная температура","hasPromo":false,"forecasts":["h24"],"status":"on","trigger":{"status":"hold","priority":1},"dynamicMeasure":"<temperature-value reactive show-units></temperature-value>","parts":[]},{"key":"wind","title":"Ветер и порывы","info":{"articleLink":"/mq/ru/wiki/wind-speed-and-gust/","legend":"wind"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"captionVars":[{"title":"Ветер и порывы","keys":[["wind-speed","wind-direction","wind-gust"],["wind-speed","wind-gust"]]},{"title":"Средняя скорость ветра","keys":[["wind-speed"],["wind-speed","wind-direction"]]},{"title":"Порывы ветра","keys":[["wind-gust"]]}],"dynamicMeasure":"<speed-value reactive show-units/>","parts":[{"key":"wind-speed","title":"Ветер","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"switcherGroup":1},{"key":"wind-direction","title":"Направление","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"dependsOn":["wind-speed"],"switcherGroup":1},{"key":"wind-gust","title":"Порывы ветра","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"switcherGroup":2}]},{"key":"pollen-birch","title":"Пыльца берёзы","info":{"articleLink":"/mq/ru/wiki/pollen-birch/","legend":"pollen"},"services":[{"title":"Пыльца на карте","link":"/maps/allergy"}],"hasPromo":false,"forecasts":["h3","h6","h24"],"status":"on","trigger":{"status":"hide","priority":3},"parts":[]},{"key":"pollen-grass","title":"Пыльца злаковых трав","info":{"articleLink":"/mq/ru/wiki/pollen-grass/","legend":"pollen"},"hasPromo":false,"forecasts":["h3","h6","h24"],"status":"on","trigger":{"status":"hide","priority":4},"parts":[]},{"key":"pollen-ragweed","title":"Пыльца амброзии","hasPromo":false,"forecasts":["h3","h6","h24"],"status":"off","trigger":{"status":"hold","priority":5},"parts":[]},{"key":"precipitation-bars","title":"Осадки в жидком эквиваленте","info":{"articleLink":"/mq/ru/wiki/precipitation-bars/"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"precipitation-probability","title":"Вероятность осадков","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"off","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"icon-snow","title":"Выпадающий снег","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":6},"parts":[]},{"key":"snow-height","title":"Высота снежного покрова","info":{"articleLink":"/mq/ru/wiki/snow-height/"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hide","priority":7},"parts":[]},{"key":"roadcondition","title":"Погода на дорогах","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"off","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"pressure","title":"Давление","hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"humidity","title":"Относительная влажность","hasPromo":false,"forecasts":["h1","h3","h6"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"humidity-avg","title":"Относительная влажность (среднесуточная)","hasPromo":false,"forecasts":["h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"radiation","title":"УФ-индекс","info":{"articleLink":"/mq/ru/wiki/radiation/","legend":"radiation"},"hasPromo":false,"forecasts":["h1","h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]},{"key":"geomagnetic","title":"Г/м активность","info":{"articleLink":"/mq/ru/wiki/geomagnetic/","legend":"geomagnetic"},"hasPromo":false,"forecasts":["h3","h6","h24"],"status":"on","trigger":{"status":"hold","priority":1},"parts":[]}]},"abtests":{"group":0,"abGroups":[],"cookie":"ab_audience_3","current":[],"tests":[{"disabled":false,"version":"V1","name":"NG-1049","audience":{"test":[1,5],"control":[51,55]}}]},"menu":{"burger":[{"key":"index","isActive":false,"project":"weather","title":"Главная","attention":false,"url":"/"},{"key":"nowcast","isActive":false,"project":"weather","title":"Радар","attention":false,"url":"/nowcast-sochi-5233/"},{"key":"now","isActive":false,"project":"weather","title":"Сейчас","attention":false,"url":"/weather-sochi-5233/now/"},{"key":"hourly","isActive":false,"project":"weather","title":"По часам","attention":false,"url":"/weather-sochi-5233/hourly/"},{"key":"today","isActive":false,"project":"weather","title":"Сегодня","attention":false,"url":"/weather-sochi-5233/"},{"key":"tomorrow","isActive":false,"project":"weather","title":"Завтра","attention":false,"url":"/weather-sochi-5233/tomorrow/"},{"key":"3-days","isActive":false,"project":"weather","title":"3 дня","attention":false,"url":"/weather-sochi-5233/3-days/"},{"key":"weekend","isActive":false,"project":"weather","title":"Выходные","attention":false,"url":"/weather-sochi-5233/weekend/"},{"key":"weekly","isActive":false,"project":"weather","title":"Неделя","attention":false,"url":"/weather-sochi-5233/weekly/"},{"key":"10-days","isActive":true,"project":"weather","title":"10&nbsp;дней","attention":false,"url":"/weather-sochi-5233/10-days/"},{"key":"2-weeks","isActive":false,"project":"weather","title":"2&nbsp;недели","attention":false,"url":"/weather-sochi-5233/2-weeks/"},{"key":"month","isActive":false,"project":"weather","title":"Месяц","attention":false,"url":"/weather-sochi-5233/month/"},{"key":"gm","isActive":false,"project":"weather","title":"Г/м активность","attention":false,"url":"/weather-sochi-5233/gm/"},{"key":"statistics","isActive":false,"project":"weather","title":"Статистика","attention":false,"url":"/weather-sochi-5233/statistics/"}],"burgerNews":[{"key":"news","isActive":false,"project":"news","title":"Новости","attention":false,"url":"/news/"},{"key":"weather","isActive":false,"project":"news","title":"О погоде","attention":false,"url":"/news/weather/"},{"key":"science","isActive":false,"project":"news","title":"Наука и космос","attention":false,"url":"/news/science/"},{"key":"nature","isActive":false,"project":"news","title":"Природа","attention":false,"url":"/news/nature/"},{"key":"animals","isActive":false,"project":"news","title":"Животные","attention":false,"url":"/news/animals/"},{"key":"auto","isActive":false,"project":"news","title":"Авто","attention":false,"url":"/news/auto/"},{"key":"health","isActive":false,"project":"news","title":"Здоровье","attention":false,"url":"/news/health/"}],"footer":[{"key":"agreement","isActive":false,"project":"about","title":"Соглашение","attention":false,"url":"/page/agreement/"},{"key":"recommendations","isActive":false,"project":"about","title":"Рекомендательные технологии","attention":false,"url":"/page/recommendations/"},{"key":"adv","isActive":false,"project":"about","title":"Размещение рекламы","attention":false,"url":"/page/adv/"},{"key":"contacts","isActive":false,"project":"about","title":"Контакты","attention":false,"url":"/page/contacts/"}],"languages":[{"key":"ru","isActive":false,"project":"all","title":"По-русски","attention":false,"url":"/weather-sochi-5233/10-days/"}],"categories":[{"key":"weather","isActive":false,"project":"news","title":"О погоде","attention":false,"url":"/news/weather/"},{"key":"science","isActive":false,"project":"news","title":"Наука и космос","attention":false,"url":"/news/science/"},{"key":"nature","isActive":false,"project":"news","title":"Природа","attention":false,"url":"/news/nature/"},{"key":"animals","isActive":false,"project":"news","title":"Животные","attention":false,"url":"/news/animals/"},{"key":"auto","isActive":false,"project":"news","title":"Авто","attention":false,"url":"/news/auto/"},{"key":"health","isActive":false,"project":"news","title":"Здоровье","attention":false,"url":"/news/health/"}]},"dictionary":{"actions":{"add":"Добавить в прогноз","cancel":"Отмена","clear":"Очистить","close":"Закрыть","dismiss":"Оставить","feedback":"Оставить отзыв","fullversion":"Для больших экранов","geoConfirm":"Разрешите определить ваше местоположение","hideTeaser":"Скрыть подсказку","loading":"Загрузка...","mobile-site":"Мобильный сайт","mobileVersion":"Перейти на мобильную версию","nowcast":"Смотрите осадки<br />на карте","open-menu":"Открыть меню","open-search":"Открыть поиск","pollen-on-map":"Пыльца на карте","print":"Распечатать...","remove":"Убрать из прогноза","search":"Поиск местоположения","searchGeoProcess":"Определение местоположения","searchPlaceholder":"Поиск местоположения"},"city":{"names":{"airport":"{CITY_NAME} аэропорт","city":"{CITY_NAME}"},"popularTitle":"Популярные пункты","viewTitle":"Просмотренные"},"declensions":{"mph":{"0":"миля/ч","1":"мили/ч","2":"миль/ч"}},"info":{"more":"Подробнее о параметре","precipitation-extended":"Часовые столбики в днях","precipitation-extended-desc":"Для оценки интенсивности осадков","toggle":"Отображать в прогнозе","no-data":"Нет данных","no-data-extended":"Данные уточняются.","check-again":"Пожалуйста, зайдите чуть позже."},"informers":{"pollen-birch-add":"Идёт сезон цветения берёзы. Следите за аллергеном","pollen-grass-add":"Идёт сезон цветения злаков. Следите за аллергеном","pollen-ragweed-add":"Идёт сезон цветения амброзии. Следите за аллергеном","pollen-map":"Смотрите за активностью аллергенов на карте","pollen-remove":"Снизилась концентрация пыльцы в воздухе","snow-add":"Смотрите как меняется высота снежного покрова","snow-remove":"Похоже, что снег не лежит и в ближайшее время не выпадет"},"map":{"region":{"sib":{"nameR":"Сибири","name":"Сибирь","nameP":"в Сибири"},"feru":{"nameR":"Дальнего Востока","name":"Дальний Восток","nameP":"на Дальнем Востоке"},"eur":{"nameR":"Европы","name":"Европа","nameP":"в Европе"}},"type":{"clou":{"name":"облачность","nameP":"облачности"},"prc":{"name":"осадки","nameP":"осадков"},"temp":{"name":"температура","nameP":"температуры"},"wind":{"name":"ветер","nameP":"ветра"}},"interactive":{"nowcast":"Осадки","birch":"Берёза","grass":"Злаки","ragweed":"Амброзия","group":{"allergy":"Пыльца"}}},"measureUnits":{"c":"°C","f":"°F","cm":"см","hpa":"гПа","hour":"ч","km":"км","kmh":"км/ч","mph":"миля/ч","kp_index":"Кп-индекс","m":"м","ms":"м/c","max":"Макс","min":"Мин","minute":"мин","mm":"мм","mmhg":"мм рт. ст.","nodata":"н/д","percent":"%","point":"балл","point_m3":"ед./м<sup>3</sup>","points":"баллы"},"menuTabs":{"weather":"Погода","news":"Новости","about":"О Компании"},"search":{"allWorld":"Весь мир","citiesTitle":"Пункты","countries":"Страны","favoritesTitle":"Избранные пункты","findAll":"Найти все пункты","ipTitle":"Ближайшие пункты по IP-адресу","lastViewed":"Вы недавно смотрели","myCities":"Мои пункты","nearest":"Поблизости","notFound":"Ничего не найдено","onQuery":"По запросу &laquo;{QUERY}&raquo; найдено {TOTAL} {PLACES}","settlements":"Населённые пункты","viewedTitle":"Просмотренные"},"widgetsParams":{"description":"Выберите параметры, которые хотите видеть в прогнозе","reset":"Вернуть вид по умолчанию","settings":"Набор данных","teaser":"<b>Что нового:</b> теперь можно настраивать прогноз","tips":{"0":"Тут можно убрать или добавить параметры для прогноза","1":"Настройте прогноз по вашим интересам","2":"Геомагнитное поле, влажность, УФ-индекс и другие параметры","3":"Выберите параметры, которые хотите видеть в прогнозе"},"title":"Набор данных в прогнозе"},"legends":{"gm":{"title":"Геомагнитная активность","value":{"0":"Возмущения отсутствуют","1":"Небольшие возмущения","2":"Небольшие возмущения","3":"Небольшие возмущения","4":"Небольшие возмущения","5":"Слабая буря","6":"Умеренная буря","7":"Сильная буря","8":"Шторм","9":"Экстремальный шторм"}},"nowcast":{"title":"Интенсивность осадков","value":{"1":"Осадки","2":"Гроза","3":"Град"}},"pollen":{"title":"Пыльца","value":{"0":"Незначительная","1":"Низкая","2":"Умеренная","3":"Высокая","4":"Очень высокая","5":"Экстремальная"}},"radiation":{"title":"УФ-индекс","value":{"2":"Низкий","5":"Умеренный","7":"Высокий","10":"Очень высокий","11":"Экстремальный"}},"wind":{"value":{"0":"Штиль","1":"Слабый","5":"Умеренный","10":"Сильный","15":"Очень сильный","20":"Шторм","25":"Сильный шторм","33":"Ураган","-1":"Нет данных"}}}},"profile":{"user":null,"userSettings":null}}</script>
   <script>window.M.state.app.timestamps = {
-        now: new Date('2025/04/03 11:36:51'),
+        now: new Date('2025/04/03 11:39:13'),
         local: Date.now()
     }
     window.M.state.app.X = +'0'
     window.M.state.app.dc = 'nord'
-    window.M.state.app.uniq = 'c38f48e910ca7d2435bc8803ad395ce0'
+    window.M.state.app.uniq = '5cebe56458247cd28fd37b99965a05f7'
     window.M.state.app.device.origin = 'desktop'
     window.M.state.abtests.group = +'10'</script>
   <script>(() => {
@@ -1129,79 +1129,79 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          <div class="chart">
           <svg class="svg-temperature" viewBox="0 0 550 32" preserveAspectRatio="none" width="100%" height="32px">
            <defs>
-            <linearGradient id="fill-1-uniq694" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-1-uniq58312" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(166, 231, 0, 1)" />
              <stop offset="1" stop-color="rgba(142, 239, 2, 1)" />
             </linearGradient>
-            <linearGradient id="fill-3-uniq694" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-3-uniq58312" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(142, 239, 2, 1)" />
              <stop offset="1" stop-color="rgba(155, 235, 0, 1)" />
             </linearGradient>
-            <linearGradient id="fill-5-uniq694" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-5-uniq58312" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(142, 239, 2, 1)" />
              <stop offset="1" stop-color="rgba(176, 227, 0, 1)" />
             </linearGradient>
-            <linearGradient id="fill-7-uniq694" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-7-uniq58312" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(155, 235, 0, 1)" />
              <stop offset="1" stop-color="rgba(110, 247, 18, 1)" />
             </linearGradient>
-            <linearGradient id="fill-9-uniq694" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-9-uniq58312" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(176, 227, 0, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-11-uniq694" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-11-uniq58312" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(110, 247, 18, 1)" />
              <stop offset="1" stop-color="rgba(43, 253, 60, 1)" />
             </linearGradient>
-            <linearGradient id="fill-13-uniq694" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-13-uniq58312" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-15-uniq694" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-15-uniq58312" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(43, 253, 60, 1)" />
              <stop offset="1" stop-color="rgba(110, 247, 18, 1)" />
             </linearGradient>
-            <linearGradient id="fill-17-uniq694" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-17-uniq58312" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(110, 247, 18, 1)" />
             </linearGradient>
-            <linearGradient id="fill-1-uniq51371" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-1-uniq62317" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(110, 247, 18, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-3-uniq51371" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-3-uniq62317" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-5-uniq51371" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-5-uniq62317" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(128, 243, 8, 1)" />
             </linearGradient>
-            <linearGradient id="fill-7-uniq51371" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-7-uniq62317" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(31, 250, 76, 1)" />
             </linearGradient>
-            <linearGradient id="fill-9-uniq51371" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-9-uniq62317" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(128, 243, 8, 1)" />
              <stop offset="1" stop-color="rgba(19, 248, 90, 1)" />
             </linearGradient>
-            <linearGradient id="fill-11-uniq51371" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-11-uniq62317" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(31, 250, 76, 1)" />
              <stop offset="1" stop-color="rgba(19, 248, 90, 1)" />
             </linearGradient>
-            <linearGradient id="fill-13-uniq51371" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-13-uniq62317" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(19, 248, 90, 1)" />
              <stop offset="1" stop-color="rgba(7, 245, 102, 1)" />
             </linearGradient>
-            <linearGradient id="fill-15-uniq51371" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-15-uniq62317" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(19, 248, 90, 1)" />
              <stop offset="1" stop-color="rgba(19, 248, 90, 1)" />
             </linearGradient>
-            <linearGradient id="fill-17-uniq51371" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-17-uniq62317" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(7, 245, 102, 1)" />
              <stop offset="1" stop-color="rgba(19, 248, 90, 1)" />
             </linearGradient>
-           </defs><g transform="translate(0, 0)" id="gFillPath-uniq63154">
+           </defs><g transform="translate(0, 0)" id="gFillPath-uniq26480">
             <path d="M0,2.727272727272727l55,0l0,10.909l-55,0" stroke="none" fill="rgba(142, 239, 2, 0.25)" />
             <path d="M55,8.181818181818182l55,0l0,8.182l-55,0" stroke="none" fill="rgba(128, 243, 8, 0.25)" />
             <path d="M110,8.181818181818182l55,0l0,8.182l-55,0" stroke="none" fill="rgba(128, 243, 8, 0.25)" />
@@ -1212,45 +1212,45 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
             <path d="M385,21.818181818181817l55,0l0,5.455l-55,0" stroke="none" fill="rgba(31, 250, 76, 0.25)" />
             <path d="M440,16.363636363636363l55,0l0,13.636l-55,0" stroke="none" fill="rgba(43, 253, 60, 0.25)" />
             <path d="M495,13.636363636363635l55,0l0,13.636l-55,0" stroke="none" fill="rgba(54, 255, 38, 0.25)" />
-           </g><g transform="translate(0, 0)" id="gPath-uniq694">
+           </g><g transform="translate(0, 0)" id="gPath-uniq58312">
             <path d="M0,2.727272727272727l55,0l0,1l-55,0" stroke="none" fill="rgba(166, 231, 0, 1)" />
-            <path d="M55,2.727272727272727l0,5.455l1,0l0,-5.455" stroke="none" fill="url(#fill-1-uniq694)" />
+            <path d="M55,2.727272727272727l0,5.455l1,0l0,-5.455" stroke="none" fill="url(#fill-1-uniq58312)" />
             <path d="M55,8.181818181818182l55,0l0,1l-55,0" stroke="none" fill="rgba(142, 239, 2, 1)" />
-            <path d="M110,8.181818181818182l0,0" stroke="none" fill="url(#fill-3-uniq694)" />
+            <path d="M110,8.181818181818182l0,0" stroke="none" fill="url(#fill-3-uniq58312)" />
             <path d="M110,8.181818181818182l55,0l0,1l-55,0" stroke="none" fill="rgba(142, 239, 2, 1)" />
-            <path d="M165,9.181818181818182l0,-3.727l1,0l0,3.727" stroke="none" fill="url(#fill-5-uniq694)" />
+            <path d="M165,9.181818181818182l0,-3.727l1,0l0,3.727" stroke="none" fill="url(#fill-5-uniq58312)" />
             <path d="M165,5.454545454545454l55,0l0,1l-55,0" stroke="none" fill="rgba(155, 235, 0, 1)" />
-            <path d="M220,6.454545454545454l0,-6.455l1,0l0,6.455" stroke="none" fill="url(#fill-7-uniq694)" />
+            <path d="M220,6.454545454545454l0,-6.455l1,0l0,6.455" stroke="none" fill="url(#fill-7-uniq58312)" />
             <path d="M220,0l55,0l0,1l-55,0" stroke="none" fill="rgba(176, 227, 0, 1)" />
-            <path d="M275,0l0,13.636l1,0l0,-13.636" stroke="none" fill="url(#fill-9-uniq694)" />
+            <path d="M275,0l0,13.636l1,0l0,-13.636" stroke="none" fill="url(#fill-9-uniq58312)" />
             <path d="M275,13.636363636363635l55,0l0,1l-55,0" stroke="none" fill="rgba(110, 247, 18, 1)" />
-            <path d="M330,13.636363636363635l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-11-uniq694)" />
+            <path d="M330,13.636363636363635l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-11-uniq58312)" />
             <path d="M330,16.363636363636363l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M385,16.363636363636363l0,5.455l1,0l0,-5.455" stroke="none" fill="url(#fill-13-uniq694)" />
+            <path d="M385,16.363636363636363l0,5.455l1,0l0,-5.455" stroke="none" fill="url(#fill-13-uniq58312)" />
             <path d="M385,21.818181818181817l55,0l0,1l-55,0" stroke="none" fill="rgba(43, 253, 60, 1)" />
-            <path d="M440,22.818181818181817l0,-6.455l1,0l0,6.455" stroke="none" fill="url(#fill-15-uniq694)" />
+            <path d="M440,22.818181818181817l0,-6.455l1,0l0,6.455" stroke="none" fill="url(#fill-15-uniq58312)" />
             <path d="M440,16.363636363636363l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M495,17.363636363636363l0,-3.727l1,0l0,3.727" stroke="none" fill="url(#fill-17-uniq694)" />
+            <path d="M495,17.363636363636363l0,-3.727l1,0l0,3.727" stroke="none" fill="url(#fill-17-uniq58312)" />
             <path d="M495,13.636363636363635l55,0l0,1l-55,0" stroke="none" fill="rgba(110, 247, 18, 1)" />
-           </g><g transform="translate(0, 0)" id="gPath-uniq51371">
+           </g><g transform="translate(0, 0)" id="gPath-uniq62317">
             <path d="M0,13.636363636363635l55,0l0,1l-55,0" stroke="none" fill="rgba(110, 247, 18, 1)" />
-            <path d="M55,13.636363636363635l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-1-uniq51371)" />
+            <path d="M55,13.636363636363635l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-1-uniq62317)" />
             <path d="M55,16.363636363636363l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M110,16.363636363636363l0,0" stroke="none" fill="url(#fill-3-uniq51371)" />
+            <path d="M110,16.363636363636363l0,0" stroke="none" fill="url(#fill-3-uniq62317)" />
             <path d="M110,16.363636363636363l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M165,16.363636363636363l0,0" stroke="none" fill="url(#fill-5-uniq51371)" />
+            <path d="M165,16.363636363636363l0,0" stroke="none" fill="url(#fill-5-uniq62317)" />
             <path d="M165,16.363636363636363l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M220,17.363636363636363l0,-6.455l1,0l0,6.455" stroke="none" fill="url(#fill-7-uniq51371)" />
+            <path d="M220,17.363636363636363l0,-6.455l1,0l0,6.455" stroke="none" fill="url(#fill-7-uniq62317)" />
             <path d="M220,10.909090909090908l55,0l0,1l-55,0" stroke="none" fill="rgba(128, 243, 8, 1)" />
-            <path d="M275,10.909090909090908l0,13.636l1,0l0,-13.636" stroke="none" fill="url(#fill-9-uniq51371)" />
+            <path d="M275,10.909090909090908l0,13.636l1,0l0,-13.636" stroke="none" fill="url(#fill-9-uniq62317)" />
             <path d="M275,24.545454545454543l55,0l0,1l-55,0" stroke="none" fill="rgba(31, 250, 76, 1)" />
-            <path d="M330,24.545454545454543l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-11-uniq51371)" />
+            <path d="M330,24.545454545454543l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-11-uniq62317)" />
             <path d="M330,27.27272727272727l55,0l0,1l-55,0" stroke="none" fill="rgba(19, 248, 90, 1)" />
-            <path d="M385,27.27272727272727l0,0" stroke="none" fill="url(#fill-13-uniq51371)" />
+            <path d="M385,27.27272727272727l0,0" stroke="none" fill="url(#fill-13-uniq62317)" />
             <path d="M385,27.27272727272727l55,0l0,1l-55,0" stroke="none" fill="rgba(19, 248, 90, 1)" />
-            <path d="M440,27.27272727272727l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-15-uniq51371)" />
+            <path d="M440,27.27272727272727l0,2.727l1,0l0,-2.727" stroke="none" fill="url(#fill-15-uniq62317)" />
             <path d="M440,29.999999999999996l55,0l0,1l-55,0" stroke="none" fill="rgba(7, 245, 102, 1)" />
-            <path d="M495,30.999999999999996l0,-3.727l1,0l0,3.727" stroke="none" fill="url(#fill-17-uniq51371)" />
+            <path d="M495,30.999999999999996l0,-3.727l1,0l0,3.727" stroke="none" fill="url(#fill-17-uniq62317)" />
             <path d="M495,27.27272727272727l55,0l0,1l-55,0" stroke="none" fill="rgba(19, 248, 90, 1)" />
            </g>
           </svg>
@@ -1343,79 +1343,79 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          <div class="chart">
           <svg class="svg-temperature" viewBox="0 0 550 32" preserveAspectRatio="none" width="100%" height="32px">
            <defs>
-            <linearGradient id="fill-1-uniq55427" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-1-uniq34108" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(166, 231, 0, 1)" />
              <stop offset="1" stop-color="rgba(142, 239, 2, 1)" />
             </linearGradient>
-            <linearGradient id="fill-3-uniq55427" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-3-uniq34108" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(142, 239, 2, 1)" />
              <stop offset="1" stop-color="rgba(155, 235, 0, 1)" />
             </linearGradient>
-            <linearGradient id="fill-5-uniq55427" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-5-uniq34108" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(142, 239, 2, 1)" />
              <stop offset="1" stop-color="rgba(176, 227, 0, 1)" />
             </linearGradient>
-            <linearGradient id="fill-7-uniq55427" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-7-uniq34108" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(155, 235, 0, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-9-uniq55427" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-9-uniq34108" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(176, 227, 0, 1)" />
              <stop offset="1" stop-color="rgba(31, 250, 76, 1)" />
             </linearGradient>
-            <linearGradient id="fill-11-uniq55427" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-11-uniq34108" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(7, 245, 102, 1)" />
             </linearGradient>
-            <linearGradient id="fill-13-uniq55427" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-13-uniq34108" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(31, 250, 76, 1)" />
              <stop offset="1" stop-color="rgba(54, 255, 38, 1)" />
             </linearGradient>
-            <linearGradient id="fill-15-uniq55427" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-15-uniq34108" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(7, 245, 102, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-17-uniq55427" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-17-uniq34108" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(54, 255, 38, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-1-uniq38868" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-1-uniq7547" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(88, 251, 28, 1)" />
             </linearGradient>
-            <linearGradient id="fill-3-uniq38868" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-3-uniq7547" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(54, 255, 38, 1)" />
              <stop offset="1" stop-color="rgba(54, 255, 38, 1)" />
             </linearGradient>
-            <linearGradient id="fill-5-uniq38868" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-5-uniq7547" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(88, 251, 28, 1)" />
              <stop offset="1" stop-color="rgba(110, 247, 18, 1)" />
             </linearGradient>
-            <linearGradient id="fill-7-uniq38868" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-7-uniq7547" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(54, 255, 38, 1)" />
              <stop offset="1" stop-color="rgba(0, 242, 112, 1)" />
             </linearGradient>
-            <linearGradient id="fill-9-uniq38868" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-9-uniq7547" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(110, 247, 18, 1)" />
              <stop offset="1" stop-color="rgba(0, 236, 142, 1)" />
             </linearGradient>
-            <linearGradient id="fill-11-uniq38868" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-11-uniq7547" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(0, 242, 112, 1)" />
              <stop offset="1" stop-color="rgba(0, 236, 142, 1)" />
             </linearGradient>
-            <linearGradient id="fill-13-uniq38868" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-13-uniq7547" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(0, 236, 142, 1)" />
              <stop offset="1" stop-color="rgba(0, 236, 142, 1)" />
             </linearGradient>
-            <linearGradient id="fill-15-uniq38868" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-15-uniq7547" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(0, 236, 142, 1)" />
              <stop offset="1" stop-color="rgba(0, 242, 112, 1)" />
             </linearGradient>
-            <linearGradient id="fill-17-uniq38868" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-17-uniq7547" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(0, 236, 142, 1)" />
              <stop offset="1" stop-color="rgba(0, 242, 112, 1)" />
             </linearGradient>
-           </defs><g transform="translate(0, 0)" id="gFillPath-uniq41836">
+           </defs><g transform="translate(0, 0)" id="gFillPath-uniq48201">
             <path d="M0,2.3076923076923075l55,0l0,11.538l-55,0" stroke="none" fill="rgba(142, 239, 2, 0.25)" />
             <path d="M55,6.9230769230769225l55,0l0,9.231l-55,0" stroke="none" fill="rgba(110, 247, 18, 0.25)" />
             <path d="M110,6.9230769230769225l55,0l0,6.923l-55,0" stroke="none" fill="rgba(128, 243, 8, 0.25)" />
@@ -1426,45 +1426,45 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
             <path d="M385,25.384615384615383l55,0l0,4.615l-55,0" stroke="none" fill="rgba(0, 242, 112, 0.25)" />
             <path d="M440,16.153846153846153l55,0l0,13.846l-55,0" stroke="none" fill="rgba(19, 248, 90, 0.25)" />
             <path d="M495,13.846153846153845l55,0l0,13.846l-55,0" stroke="none" fill="rgba(31, 250, 76, 0.25)" />
-           </g><g transform="translate(0, 0)" id="gPath-uniq55427">
+           </g><g transform="translate(0, 0)" id="gPath-uniq34108">
             <path d="M0,2.3076923076923075l55,0l0,1l-55,0" stroke="none" fill="rgba(166, 231, 0, 1)" />
-            <path d="M55,2.3076923076923075l0,4.615l1,0l0,-4.615" stroke="none" fill="url(#fill-1-uniq55427)" />
+            <path d="M55,2.3076923076923075l0,4.615l1,0l0,-4.615" stroke="none" fill="url(#fill-1-uniq34108)" />
             <path d="M55,6.9230769230769225l55,0l0,1l-55,0" stroke="none" fill="rgba(142, 239, 2, 1)" />
-            <path d="M110,6.9230769230769225l0,0" stroke="none" fill="url(#fill-3-uniq55427)" />
+            <path d="M110,6.9230769230769225l0,0" stroke="none" fill="url(#fill-3-uniq34108)" />
             <path d="M110,6.9230769230769225l55,0l0,1l-55,0" stroke="none" fill="rgba(142, 239, 2, 1)" />
-            <path d="M165,7.9230769230769225l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-5-uniq55427)" />
+            <path d="M165,7.9230769230769225l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-5-uniq34108)" />
             <path d="M165,4.615384615384615l55,0l0,1l-55,0" stroke="none" fill="rgba(155, 235, 0, 1)" />
-            <path d="M220,5.615384615384615l0,-5.615l1,0l0,5.615" stroke="none" fill="url(#fill-7-uniq55427)" />
+            <path d="M220,5.615384615384615l0,-5.615l1,0l0,5.615" stroke="none" fill="url(#fill-7-uniq34108)" />
             <path d="M220,0l55,0l0,1l-55,0" stroke="none" fill="rgba(176, 227, 0, 1)" />
-            <path d="M275,0l0,13.846l1,0l0,-13.846" stroke="none" fill="url(#fill-9-uniq55427)" />
+            <path d="M275,0l0,13.846l1,0l0,-13.846" stroke="none" fill="url(#fill-9-uniq34108)" />
             <path d="M275,13.846153846153845l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M330,13.846153846153845l0,6.923l1,0l0,-6.923" stroke="none" fill="url(#fill-11-uniq55427)" />
+            <path d="M330,13.846153846153845l0,6.923l1,0l0,-6.923" stroke="none" fill="url(#fill-11-uniq34108)" />
             <path d="M330,20.769230769230766l55,0l0,1l-55,0" stroke="none" fill="rgba(31, 250, 76, 1)" />
-            <path d="M385,20.769230769230766l0,4.615l1,0l0,-4.615" stroke="none" fill="url(#fill-13-uniq55427)" />
+            <path d="M385,20.769230769230766l0,4.615l1,0l0,-4.615" stroke="none" fill="url(#fill-13-uniq34108)" />
             <path d="M385,25.384615384615383l55,0l0,1l-55,0" stroke="none" fill="rgba(7, 245, 102, 1)" />
-            <path d="M440,26.384615384615383l0,-10.231l1,0l0,10.231" stroke="none" fill="url(#fill-15-uniq55427)" />
+            <path d="M440,26.384615384615383l0,-10.231l1,0l0,10.231" stroke="none" fill="url(#fill-15-uniq34108)" />
             <path d="M440,16.153846153846153l55,0l0,1l-55,0" stroke="none" fill="rgba(54, 255, 38, 1)" />
-            <path d="M495,17.153846153846153l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-17-uniq55427)" />
+            <path d="M495,17.153846153846153l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-17-uniq34108)" />
             <path d="M495,13.846153846153845l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-           </g><g transform="translate(0, 0)" id="gPath-uniq38868">
+           </g><g transform="translate(0, 0)" id="gPath-uniq7547">
             <path d="M0,13.846153846153845l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M55,13.846153846153845l0,2.308l1,0l0,-2.308" stroke="none" fill="url(#fill-1-uniq38868)" />
+            <path d="M55,13.846153846153845l0,2.308l1,0l0,-2.308" stroke="none" fill="url(#fill-1-uniq7547)" />
             <path d="M55,16.153846153846153l55,0l0,1l-55,0" stroke="none" fill="rgba(54, 255, 38, 1)" />
-            <path d="M110,17.153846153846153l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-3-uniq38868)" />
+            <path d="M110,17.153846153846153l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-3-uniq7547)" />
             <path d="M110,13.846153846153845l55,0l0,1l-55,0" stroke="none" fill="rgba(88, 251, 28, 1)" />
-            <path d="M165,13.846153846153845l0,2.308l1,0l0,-2.308" stroke="none" fill="url(#fill-5-uniq38868)" />
+            <path d="M165,13.846153846153845l0,2.308l1,0l0,-2.308" stroke="none" fill="url(#fill-5-uniq7547)" />
             <path d="M165,16.153846153846153l55,0l0,1l-55,0" stroke="none" fill="rgba(54, 255, 38, 1)" />
-            <path d="M220,17.153846153846153l0,-5.615l1,0l0,5.615" stroke="none" fill="url(#fill-7-uniq38868)" />
+            <path d="M220,17.153846153846153l0,-5.615l1,0l0,5.615" stroke="none" fill="url(#fill-7-uniq7547)" />
             <path d="M220,11.538461538461537l55,0l0,1l-55,0" stroke="none" fill="rgba(110, 247, 18, 1)" />
-            <path d="M275,11.538461538461537l0,16.154l1,0l0,-16.154" stroke="none" fill="url(#fill-9-uniq38868)" />
+            <path d="M275,11.538461538461537l0,16.154l1,0l0,-16.154" stroke="none" fill="url(#fill-9-uniq7547)" />
             <path d="M275,27.69230769230769l55,0l0,1l-55,0" stroke="none" fill="rgba(0, 242, 112, 1)" />
-            <path d="M330,27.69230769230769l0,2.308l1,0l0,-2.308" stroke="none" fill="url(#fill-11-uniq38868)" />
+            <path d="M330,27.69230769230769l0,2.308l1,0l0,-2.308" stroke="none" fill="url(#fill-11-uniq7547)" />
             <path d="M330,29.999999999999996l55,0l0,1l-55,0" stroke="none" fill="rgba(0, 236, 142, 1)" />
-            <path d="M385,29.999999999999996l0,0" stroke="none" fill="url(#fill-13-uniq38868)" />
+            <path d="M385,29.999999999999996l0,0" stroke="none" fill="url(#fill-13-uniq7547)" />
             <path d="M385,29.999999999999996l55,0l0,1l-55,0" stroke="none" fill="rgba(0, 236, 142, 1)" />
-            <path d="M440,29.999999999999996l0,0" stroke="none" fill="url(#fill-15-uniq38868)" />
+            <path d="M440,29.999999999999996l0,0" stroke="none" fill="url(#fill-15-uniq7547)" />
             <path d="M440,29.999999999999996l55,0l0,1l-55,0" stroke="none" fill="rgba(0, 236, 142, 1)" />
-            <path d="M495,30.999999999999996l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-17-uniq38868)" />
+            <path d="M495,30.999999999999996l0,-3.308l1,0l0,3.308" stroke="none" fill="url(#fill-17-uniq7547)" />
             <path d="M495,27.69230769230769l55,0l0,1l-55,0" stroke="none" fill="rgba(0, 242, 112, 1)" />
            </g>
           </svg>
@@ -1589,63 +1589,63 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
           </div>
           <svg class="svg-temperature" viewBox="0 0 550 49" preserveAspectRatio="none" width="100%" height="49px">
            <defs>
-            <linearGradient id="fill-1-uniq65687" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-1-uniq33923" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(128, 243, 8, 1)" />
              <stop offset="1" stop-color="rgba(128, 243, 8, 1)" />
             </linearGradient>
-            <linearGradient id="fill-3-uniq65687" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-3-uniq33923" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(128, 243, 8, 1)" />
              <stop offset="1" stop-color="rgba(128, 243, 8, 1)" />
             </linearGradient>
-            <linearGradient id="fill-5-uniq65687" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-5-uniq33923" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(128, 243, 8, 1)" />
              <stop offset="1" stop-color="rgba(142, 239, 2, 1)" />
             </linearGradient>
-            <linearGradient id="fill-7-uniq65687" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-7-uniq33923" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(128, 243, 8, 1)" />
              <stop offset="1" stop-color="rgba(54, 255, 38, 1)" />
             </linearGradient>
-            <linearGradient id="fill-9-uniq65687" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-9-uniq33923" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(142, 239, 2, 1)" />
              <stop offset="1" stop-color="rgba(43, 253, 60, 1)" />
             </linearGradient>
-            <linearGradient id="fill-11-uniq65687" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-11-uniq33923" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(54, 255, 38, 1)" />
              <stop offset="1" stop-color="rgba(31, 250, 76, 1)" />
             </linearGradient>
-            <linearGradient id="fill-13-uniq65687" x1="0%" x2="0%" y1="0%" y2="100%">
+            <linearGradient id="fill-13-uniq33923" x1="0%" x2="0%" y1="0%" y2="100%">
              <stop offset="0" stop-color="rgba(43, 253, 60, 1)" />
              <stop offset="1" stop-color="rgba(31, 250, 76, 1)" />
             </linearGradient>
-            <linearGradient id="fill-15-uniq65687" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-15-uniq33923" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(31, 250, 76, 1)" />
              <stop offset="1" stop-color="rgba(43, 253, 60, 1)" />
             </linearGradient>
-            <linearGradient id="fill-17-uniq65687" x1="0%" x2="0%" y1="100%" y2="0%">
+            <linearGradient id="fill-17-uniq33923" x1="0%" x2="0%" y1="100%" y2="0%">
              <stop offset="0" stop-color="rgba(31, 250, 76, 1)" />
              <stop offset="1" stop-color="rgba(43, 253, 60, 1)" />
             </linearGradient>
-           </defs><g transform="translate(0, 30)" id="gPath-uniq65687">
+           </defs><g transform="translate(0, 30)" id="gPath-uniq33923">
             <path d="M0,3l55,0l0,1l-55,0" stroke="none" fill="rgba(128, 243, 8, 1)" />
-            <path d="M55,3l0,0" stroke="none" fill="url(#fill-1-uniq65687)" />
+            <path d="M55,3l0,0" stroke="none" fill="url(#fill-1-uniq33923)" />
             <path d="M55,3l55,0l0,1l-55,0" stroke="none" fill="rgba(128, 243, 8, 1)" />
-            <path d="M110,3l0,0" stroke="none" fill="url(#fill-3-uniq65687)" />
+            <path d="M110,3l0,0" stroke="none" fill="url(#fill-3-uniq33923)" />
             <path d="M110,3l55,0l0,1l-55,0" stroke="none" fill="rgba(128, 243, 8, 1)" />
-            <path d="M165,3l0,0" stroke="none" fill="url(#fill-5-uniq65687)" />
+            <path d="M165,3l0,0" stroke="none" fill="url(#fill-5-uniq33923)" />
             <path d="M165,3l55,0l0,1l-55,0" stroke="none" fill="rgba(128, 243, 8, 1)" />
-            <path d="M220,4l0,-4l1,0l0,4" stroke="none" fill="url(#fill-7-uniq65687)" />
+            <path d="M220,4l0,-4l1,0l0,4" stroke="none" fill="url(#fill-7-uniq33923)" />
             <path d="M220,0l55,0l0,1l-55,0" stroke="none" fill="rgba(142, 239, 2, 1)" />
-            <path d="M275,0l0,12l1,0l0,-12" stroke="none" fill="url(#fill-9-uniq65687)" />
+            <path d="M275,0l0,12l1,0l0,-12" stroke="none" fill="url(#fill-9-uniq33923)" />
             <path d="M275,12l55,0l0,1l-55,0" stroke="none" fill="rgba(54, 255, 38, 1)" />
-            <path d="M330,12l0,3l1,0l0,-3" stroke="none" fill="url(#fill-11-uniq65687)" />
+            <path d="M330,12l0,3l1,0l0,-3" stroke="none" fill="url(#fill-11-uniq33923)" />
             <path d="M330,15l55,0l0,1l-55,0" stroke="none" fill="rgba(43, 253, 60, 1)" />
-            <path d="M385,15l0,3l1,0l0,-3" stroke="none" fill="url(#fill-13-uniq65687)" />
+            <path d="M385,15l0,3l1,0l0,-3" stroke="none" fill="url(#fill-13-uniq33923)" />
             <path d="M385,18l55,0l0,1l-55,0" stroke="none" fill="rgba(31, 250, 76, 1)" />
-            <path d="M440,18l0,0" stroke="none" fill="url(#fill-15-uniq65687)" />
+            <path d="M440,18l0,0" stroke="none" fill="url(#fill-15-uniq33923)" />
             <path d="M440,18l55,0l0,1l-55,0" stroke="none" fill="rgba(31, 250, 76, 1)" />
-            <path d="M495,19l0,-4l1,0l0,4" stroke="none" fill="url(#fill-17-uniq65687)" />
+            <path d="M495,19l0,-4l1,0l0,4" stroke="none" fill="url(#fill-17-uniq33923)" />
             <path d="M495,15l55,0l0,1l-55,0" stroke="none" fill="rgba(43, 253, 60, 1)" />
-           </g><g transform="translate(0, 0)" id="gFillPath-uniq56986">
+           </g><g transform="translate(0, 0)" id="gFillPath-uniq3184">
             <path d="M0,3l55,0l0,30l-55,0" stroke="none" fill="rgba(128, 243, 8, 0.25)" />
             <path d="M55,3l55,0l0,30l-55,0" stroke="none" fill="rgba(128, 243, 8, 0.25)" />
             <path d="M110,3l55,0l0,30l-55,0" stroke="none" fill="rgba(128, 243, 8, 0.25)" />
@@ -2276,7 +2276,7 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          <p class="widget-row-caption" style="grid-column-end: 10" data-key="pressure"><span>Давление,<pressure-value reactive show-units></pressure-value></span></p>
          <div class="chart">
           <svg class="svg-pressure" viewBox="0 0 550 32" preserveAspectRatio="none" width="100%" height="32px">
-           <defs></defs><g transform="translate(0, 0)" id="gFillPath-uniq16759">
+           <defs></defs><g transform="translate(0, 0)" id="gFillPath-uniq75315">
             <path d="M0,10l55,0l0,17.5l-55,0" stroke="none" fill="rgba(204, 102, 204, 0.2)" />
             <path d="M55,7.5l55,0l0,7.5l-55,0" stroke="none" fill="rgba(204, 102, 204, 0.2)" />
             <path d="M110,17.5l55,0l0,12.5l-55,0" stroke="none" fill="rgba(204, 102, 204, 0.2)" />
@@ -2287,7 +2287,7 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
             <path d="M385,10l55,0l0,5l-55,0" stroke="none" fill="rgba(204, 102, 204, 0.2)" />
             <path d="M440,12.5l55,0l0,7.5l-55,0" stroke="none" fill="rgba(204, 102, 204, 0.2)" />
             <path d="M495,12.5l55,0l0,15l-55,0" stroke="none" fill="rgba(204, 102, 204, 0.2)" />
-           </g><g transform="translate(0, 0)" id="gPath-uniq48767">
+           </g><g transform="translate(0, 0)" id="gPath-uniq25900">
             <path d="M0,10l55,0l0,1l-55,0" stroke="none" fill="rgb(204, 102, 204)" />
             <path d="M55,11l0,-3.5l1,0l0,3.5" stroke="none" fill="rgb(204, 102, 204)" />
             <path d="M55,7.5l55,0l0,1l-55,0" stroke="none" fill="rgb(204, 102, 204)" />
@@ -2307,7 +2307,7 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
             <path d="M440,12.5l55,0l0,1l-55,0" stroke="none" fill="rgb(204, 102, 204)" />
             <path d="M495,12.5l0,0" stroke="none" fill="rgb(204, 102, 204)" />
             <path d="M495,12.5l55,0l0,1l-55,0" stroke="none" fill="rgb(204, 102, 204)" />
-           </g><g transform="translate(0, 0)" id="gPath-uniq76786">
+           </g><g transform="translate(0, 0)" id="gPath-uniq22083">
             <path d="M0,27.5l55,0l0,1l-55,0" stroke="none" fill="rgb(204, 102, 204)" />
             <path d="M55,28.5l0,-13.5l1,0l0,13.5" stroke="none" fill="rgb(204, 102, 204)" />
             <path d="M55,15l55,0l0,1l-55,0" stroke="none" fill="rgb(204, 102, 204)" />
@@ -2687,18 +2687,6 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          </div></a>
        </div>
        <div class="card-wrap">
-        <a href="/news/science/studencheskaya-shutka-dlinoj-v-stoletie-v-kembridzh-vernuli-strelku-starinnyh-chasov/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-white" data-tag="Наука и космос" data-pub-date="2025-04-03T10:47:00" data-news-id="67ee6a96f4a57b41810c6a44" style="background-color: rgb(241,241,244)">
-         <div class="card-img">
-          <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/3/fe59669c44771f710c4475fd7b134c65_360x240.webp"></div>
-          <div class="img-mask" style="background-image: linear-gradient(to top, rgba(241,241,244, 1) , rgba(241,241,244, 0) )"></div>
-         </div>
-         <div class="card-text">
-          <div class="text-title">
-           Студенческая шутка длиной в столетие: В Кембридж вернули стрелку старинных часов
-          </div>
-         </div></a>
-       </div>
-       <div class="card-wrap">
         <a href="/news/health/mozhno-li-nauchitsya-ljubit-brokkoli-nauka-otvechaet-da/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-white" data-tag="Здоровье" data-pub-date="2025-04-02T19:45:43" data-news-id="67ed97b0f4a57b41810bf17a" style="background-color: rgb(244,244,241)">
          <div class="card-img">
           <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/6fb2d47786a508599fa98b580330d833_360x240.webp"></div>
@@ -2707,30 +2695,6 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          <div class="card-text">
           <div class="text-title">
            Можно ли «научиться» любить брокколи? Наука отвечает — да
-          </div>
-         </div></a>
-       </div>
-       <div class="card-wrap">
-        <a href="/news/nature/v-lesu-pod-tverju-nashli-inoplanetnyj-grib-iz-krasnoj-knigi/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-black" data-tag="Природа" data-pub-date="2025-04-02T22:43:09" data-news-id="67edc12df4a57b41810c076b" style="background-color: rgb(70,58,58)">
-         <div class="card-img">
-          <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/bc069b516eb63893e81c43e6f21951d7_360x240.webp"></div>
-          <div class="img-mask" style="background-image: linear-gradient(to top, rgba(70,58,58, 1) , rgba(70,58,58, 0) )"></div>
-         </div>
-         <div class="card-text">
-          <div class="text-title">
-           В лесу под Тверью нашли «инопланетный» гриб из Красной книги
-          </div>
-         </div></a>
-       </div>
-       <div class="card-wrap">
-        <a href="/news/science/sju-unikalnaya-okamenelost-s-myshcami-i-vnutrennimi-organami/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-white" data-tag="Наука и космос" data-pub-date="2025-04-02T20:05:25" data-news-id="67ed9b25f4a57b41810bf387" style="background-color: rgb(238,238,238)">
-         <div class="card-img">
-          <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/c473752eabea77370998872c2df08385_360x240.webp"></div>
-          <div class="img-mask" style="background-image: linear-gradient(to top, rgba(238,238,238, 1) , rgba(238,238,238, 0) )"></div>
-         </div>
-         <div class="card-text">
-          <div class="text-title">
-           Сохранилась даже пищеварительная система: окаменелость «Сью» удивила палеонтологов
           </div>
          </div></a>
        </div>
@@ -2759,6 +2723,18 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          </div></a>
        </div>
        <div class="card-wrap">
+        <a href="/news/nature/v-lesu-pod-tverju-nashli-inoplanetnyj-grib-iz-krasnoj-knigi/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-black" data-tag="Природа" data-pub-date="2025-04-02T22:43:09" data-news-id="67edc12df4a57b41810c076b" style="background-color: rgb(70,58,58)">
+         <div class="card-img">
+          <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/bc069b516eb63893e81c43e6f21951d7_360x240.webp"></div>
+          <div class="img-mask" style="background-image: linear-gradient(to top, rgba(70,58,58, 1) , rgba(70,58,58, 0) )"></div>
+         </div>
+         <div class="card-text">
+          <div class="text-title">
+           В лесу под Тверью нашли «инопланетный» гриб из Красной книги
+          </div>
+         </div></a>
+       </div>
+       <div class="card-wrap">
         <a href="/news/science/bogat-kak-krez-car-kotoryj-vypustil-pervye-zolotye-dengi/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-black" data-tag="Наука и космос" data-pub-date="2025-04-02T20:19:53" data-news-id="67ed9dc23e8cd69a1834a68a" style="background-color: rgb(32,32,19)">
          <div class="card-img">
           <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/ff363584dd050d6cfa5d9843c1d32ed6_360x240.webp"></div>
@@ -2767,6 +2743,30 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
          <div class="card-text">
           <div class="text-title">
            «Богат, как Крез»: царь, который выпустил первые золотые деньги
+          </div>
+         </div></a>
+       </div>
+       <div class="card-wrap">
+        <a href="/news/science/sju-unikalnaya-okamenelost-s-myshcami-i-vnutrennimi-organami/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-white" data-tag="Наука и космос" data-pub-date="2025-04-02T20:05:25" data-news-id="67ed9b25f4a57b41810bf387" style="background-color: rgb(238,238,238)">
+         <div class="card-img">
+          <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/c473752eabea77370998872c2df08385_360x240.webp"></div>
+          <div class="img-mask" style="background-image: linear-gradient(to top, rgba(238,238,238, 1) , rgba(238,238,238, 0) )"></div>
+         </div>
+         <div class="card-text">
+          <div class="text-title">
+           Сохранилась даже пищеварительная система: окаменелость «Сью» удивила палеонтологов
+          </div>
+         </div></a>
+       </div>
+       <div class="card-wrap">
+        <a href="/news/science/studencheskaya-shutka-dlinoj-v-stoletie-v-kembridzh-vernuli-strelku-starinnyh-chasov/?utm_source=gismeteo&amp;utm_medium=rss_feed&amp;utm_campaign=news" class="rss-card card-mobile theme-white" data-tag="Наука и космос" data-pub-date="2025-04-03T10:47:00" data-news-id="67ee6a96f4a57b41810c6a44" style="background-color: rgb(241,241,244)">
+         <div class="card-img">
+          <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/3/fe59669c44771f710c4475fd7b134c65_360x240.webp"></div>
+          <div class="img-mask" style="background-image: linear-gradient(to top, rgba(241,241,244, 1) , rgba(241,241,244, 0) )"></div>
+         </div>
+         <div class="card-text">
+          <div class="text-title">
+           Студенческая шутка длиной в столетие: В Кембридж вернули стрелку старинных часов
           </div>
          </div></a>
        </div>
@@ -2999,15 +2999,15 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
         </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=infox.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/others/outclick/4rwhX/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-03T07:57:02" data-ctr-type="monetization" data-news-id="67ee4119f4a57b41810c4aaf">
         <div class="feed-text text-empty">
          Холодная вода способствует обновлению клеток, выяснили ученые
-        </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=inosmi.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/politics/outclick/4rED1/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-03T10:09:28" data-ctr-type="monetization" data-news-id="67ee6034f4a57b41810c62a3">
-        <div class="feed-img" style="background-color: rgb(104, 88, 56)">
-         <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/3/10b7de3ceced5044dfcbdc30c44e7691_90x60.webp"></div>
+        </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=infox.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/others/outclick/4rnM5/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-02T11:15:32" data-ctr-type="monetization" data-news-id="67ed0874cb1a655486bda4ef">
+        <div class="feed-img" style="background-color: rgb(40, 88, 216)">
+         <div class="img-bg js-lazy-image" data-src="https://rss-img.gismeteo.st/2025/3/2/ae3edb52e104c26421f79d6b9a6cb12d_90x60.webp"></div>
         </div>
         <div class="feed-text">
-         Bloomberg: Газовый рынок в Европе перевернут вверх дном
-        </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=infox.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/others/outclick/4rnM5/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-02T11:15:32" data-ctr-type="monetization" data-news-id="67ed0874cb1a655486bda4ef">
-        <div class="feed-text text-empty">
          Вучич рассказал о секретных переговорах мировых лидеров с Путиным
+        </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=inosmi.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/politics/outclick/4rED1/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-03T10:09:28" data-ctr-type="monetization" data-news-id="67ee6034f4a57b41810c62a3">
+        <div class="feed-text text-empty">
+         Bloomberg: Газовый рынок в Европе перевернут вверх дном
         </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=infox.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/others/outclick/4rqpI/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-02T11:44:55" data-ctr-type="monetization" data-news-id="67ed23559988bbc9d5a42c3c">
         <div class="feed-text text-empty">
          Россиянам объяснили, что делать с найденной банковской картой
@@ -3020,4 +3020,4 @@ window.M.fn.getColumnsQty = () => window.innerWidth <= 1230 ? 2 : 3;
         </div></a><a href="https://cis.infox.sg/smart/cgi/out.php?member=infox.ru&amp;id=gismeteo.ru&amp;url=https://cis.infox.sg/others/outclick/4rqpK/" class="feed-item" target="_blank" rel="nofollow" data-tag="" data-pub-date="2025-04-02T11:43:52" data-ctr-type="monetization" data-news-id="67ed23559988bbc9d5a42c3d">
         <div class="feed-text text-empty">
          От Южной Осетии потребовали вернуть пенсии, выплаченные умершим
-        </div></a><a href="https://cis.infox.sg/s
+        </div></a><a href="http

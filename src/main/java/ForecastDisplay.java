@@ -18,10 +18,12 @@ public class ForecastDisplay implements Observer, DisplayElement {
             FileWriter fileWriter = new FileWriter(pathToFileWithHtmlCode);
             fileWriter.write(htmlCodeText);
 
+            System.out.println();
             //Для дней
             Elements elementsForDays = document.select(".day");
             String templateForDay = "<div class=\"day\">\n ";
-            for (Element currentElement : elementsForDays) {
+            for (int i = 0; i < 10; i++) {
+                Element currentElement = elementsForDays.get(i);
                 String strCurrentElement = String.valueOf(currentElement);
                 int leftIndexForDay = strCurrentElement.indexOf(templateForDay);
                 if (leftIndexForDay != -1) {
