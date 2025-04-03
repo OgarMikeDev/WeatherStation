@@ -70,7 +70,7 @@ public class WeatherData implements Subject {
             int rightIndexForPressure = line.indexOf("\"", leftIndexForPressure);
             String pressureValue = line.substring(leftIndexForPressure, rightIndexForPressure);
             System.out.println("Давление \"" + pressureValue + "\"");
-            temperature = Float.parseFloat(pressureValue);
+            pressure = Float.parseFloat(pressureValue);
         }
     }
 
