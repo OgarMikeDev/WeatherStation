@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 
-    public ArrayList<String> getDaysAndMinAndMaxValuesTemperature() {
+    public ArrayList<String> getDaysAndMinMaxValuesTemperature() {
         ArrayList<String> listDaysAndMinMaxValuesTemperature = new ArrayList<>();
         String urlSiteWeather10days = "https://www.gismeteo.ru/weather-sochi-5233/10-days/";
         String pathToFileWithHtmlCode = "data/htmlSiteForWeather10days.html";
@@ -18,7 +18,6 @@ public class ForecastDisplay implements Observer, DisplayElement {
             FileWriter fileWriter = new FileWriter(pathToFileWithHtmlCode);
             fileWriter.write(htmlCodeText);
 
-            System.out.println();
             //Для дней
             Elements elementsForDays = document.select(".day");
             String templateForDay = "<div class=\"day\">\n ";
@@ -77,7 +76,10 @@ public class ForecastDisplay implements Observer, DisplayElement {
 
     @Override
     public void display() {
-        System.out.println("Прогноз!");
+        System.out.println("Прогноз:");
+        for (String dayAndMinMaxTemperature : getDaysAndMinMaxValuesTemperature()) {
+            System.out.println(dayAndMinMaxTemperature);
+        }
     }
 
     @Override

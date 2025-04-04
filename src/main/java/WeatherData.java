@@ -69,7 +69,6 @@ public class WeatherData implements Subject {
             leftIndexForPressure += templateForPressure.length();
             int rightIndexForPressure = line.indexOf("\"", leftIndexForPressure);
             String pressureValue = line.substring(leftIndexForPressure, rightIndexForPressure);
-            System.out.println("Давление \"" + pressureValue + "\"");
             pressure = Float.parseFloat(pressureValue);
         }
     }
@@ -81,7 +80,6 @@ public class WeatherData implements Subject {
             leftIndexForHumidity += templateForHumidity.length();
             int rightIndexForHumidity = line.indexOf("]", leftIndexForHumidity);
             String humidityValue = line.substring(leftIndexForHumidity, rightIndexForHumidity);
-            System.out.println("Влажность \"" + humidityValue + "\"");
             humidity = Float.parseFloat(humidityValue);
         }
     }
@@ -93,7 +91,6 @@ public class WeatherData implements Subject {
             leftIndexForTemperature += templateForTemperature.length();
             int rightIndexForTemperature = line.indexOf("]", leftIndexForTemperature);
             String temperatureValue = line.substring(leftIndexForTemperature, rightIndexForTemperature);
-            System.out.println("Температура \"" + temperatureValue + "\"");
             temperature = Float.parseFloat(temperatureValue);
         }
     }

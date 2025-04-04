@@ -3,7 +3,16 @@ public class Main {
         WeatherData weatherData = new WeatherData();
         weatherData.setMeasurements();
 
+        CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay();
+        currentConditionsDisplay.update(
+                weatherData.getTemperature(),
+                weatherData.getHumidity(),
+                weatherData.getPressure()
+        );
+        currentConditionsDisplay.display();
+
         ForecastDisplay forecastDisplay = new ForecastDisplay();
-        forecastDisplay.getDaysAndMinAndMaxValuesTemperature();
+        forecastDisplay.getDaysAndMinMaxValuesTemperature();
+        forecastDisplay.display();
     }
 }
