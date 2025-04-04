@@ -22,47 +22,50 @@ public class ForecastDisplay implements Observer, DisplayElement {
             //Для дней
             Elements elementsForDays = document.select(".day");
             String templateForDay = "<div class=\"day\">\n ";
-            for (int i = 0; i < 10; i++) {
-                Element currentElement = elementsForDays.get(i);
+            for (int indexForDay = 0; indexForDay < 10; indexForDay++) {
+                Element currentElement = elementsForDays.get(indexForDay);
                 String strCurrentElement = String.valueOf(currentElement);
                 int leftIndexForDay = strCurrentElement.indexOf(templateForDay);
                 if (leftIndexForDay != -1) {
                     leftIndexForDay += templateForDay.length();
                     int rightIndexForDay = strCurrentElement.indexOf("\n<", leftIndexForDay);
                     String day = strCurrentElement.substring(leftIndexForDay, rightIndexForDay);
-                    System.out.println("Текущий день \"" + day + "\"");
-                }
-            }
+                    //Для минимальной температуры
+                    Elements elementsForMinTemperature = document.select(".mint");
+                    String templateForMinTemperature = "<div class=\"mint\">\n <temperature-value value=\"";
+                    for (int indexForMinTemperature = 0; indexForMinTemperature < 10; indexForMinTemperature++) {
+                        Element currentElementForMinTemperature = elementsForMinTemperature.get(indexForMinTemperature);
+                        String strCurrentElementForMinTemperature = String.valueOf(currentElementForMinTemperature);
+                        int leftIndexForDayForMinTemperature = strCurrentElementForMinTemperature.indexOf(templateForMinTemperature);
+                        if (leftIndexForDayForMinTemperature != -1) {
+                            leftIndexForDayForMinTemperature += templateForMinTemperature.length();
+                            int rightIndexForDayForMinTemperature = strCurrentElementForMinTemperature.indexOf("\"", leftIndexForDayForMinTemperature);
+                            String minTemperature = strCurrentElementForMinTemperature.substring(leftIndexForDayForMinTemperature, rightIndexForDayForMinTemperature);
+                            //Для максимальной температуры
+                            Elements elementsForMaxTemperature = document.select(".maxt");
+                            String templateForMaxTemperature = "<div class=\"maxt\">\n <temperature-value value=\"";
+                            for (int indexForMaxTemperature = 0; indexForMaxTemperature < 10; indexForMaxTemperature++) {
+                                Element currentElementForMaxTemperature = elementsForMaxTemperature.get(indexForMaxTemperature);
+                                String strCurrentElementForMaxTemperature = String.valueOf(currentElementForMaxTemperature);
+                                int leftIndexForDayForMaxTemperature = strCurrentElementForMaxTemperature.indexOf(templateForMaxTemperature);
+                                if (leftIndexForDayForMaxTemperature != -1) {
+                                    leftIndexForDayForMaxTemperature += templateForMaxTemperature.length();
+                                    int rightIndexForDayForMaxTemperature = strCurrentElementForMaxTemperature.indexOf("\"", leftIndexForDayForMaxTemperature);
+                                    String maxTemperature = strCurrentElementForMaxTemperature.substring(leftIndexForDayForMaxTemperature, rightIndexForDayForMaxTemperature);
+                                    if (indexForDay == indexForMinTemperature &&
+                                            indexForDay == indexForMaxTemperature &&
+                                                indexForMinTemperature == indexForMaxTemperature) {
+                                        String currentDayAndMinMaxTemperature =
+                                                "Текущий день \"" + day + "\"" +
+                                                        "; текущая минимальная температура \"" + minTemperature + "\"; " +
+                                                            "текущая максимальная температура \"" + maxTemperature + "\"";
 
-            System.out.println();
-            //Для минимальной температуры
-            Elements elementsForMinTemperature = document.select(".mint");
-            String templateForMinTemperature = "<div class=\"mint\">\n <temperature-value value=\"";
-            for (int i = 0; i < 10; i++) {
-                Element currentElement = elementsForMinTemperature.get(i);
-                String strCurrentElement = String.valueOf(currentElement);
-                int leftIndexForDay = strCurrentElement.indexOf(templateForMinTemperature);
-                if (leftIndexForDay != -1) {
-                    leftIndexForDay += templateForMinTemperature.length();
-                    int rightIndexForDay = strCurrentElement.indexOf("\"", leftIndexForDay);
-                    String minTemperature = strCurrentElement.substring(leftIndexForDay, rightIndexForDay);
-                    System.out.println("Текущая минимальная температура \"" + minTemperature + "\"");
-                }
-            }
-
-            System.out.println();
-            //Для максимальной температуры
-            Elements elementsForMaxTemperature = document.select(".maxt");
-            String templateForMaxTemperature = "<div class=\"maxt\">\n <temperature-value value=\"";
-            for (int i = 0; i < 10; i++) {
-                Element currentElement = elementsForMaxTemperature.get(i);
-                String strCurrentElement = String.valueOf(currentElement);
-                int leftIndexForDay = strCurrentElement.indexOf(templateForMaxTemperature);
-                if (leftIndexForDay != -1) {
-                    leftIndexForDay += templateForMaxTemperature.length();
-                    int rightIndexForDay = strCurrentElement.indexOf("\"", leftIndexForDay);
-                    String maxTemperature = strCurrentElement.substring(leftIndexForDay, rightIndexForDay);
-                    System.out.println("Текущая максимальная температура \"" + maxTemperature + "\"");
+                                        listDaysAndMinMaxValuesTemperature.add(currentDayAndMinMaxTemperature);
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
