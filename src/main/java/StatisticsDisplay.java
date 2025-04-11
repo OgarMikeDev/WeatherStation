@@ -60,7 +60,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     @Override
     public void display() {
         getAverageValueAllTemperatureAir();
-        System.out.println("\nСтатистика!");
+        System.out.println("\nСтатистика:");
         System.out.println("Ср. знач. всех температур: " + getAverageValueAllTemperatureAir());
         sortedAllTemperaturesAir(listMinTemperaturesAir);
         System.out.println("Минимальная температура: " + getMinTemperatureAir());
