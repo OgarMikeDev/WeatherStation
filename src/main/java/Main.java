@@ -12,10 +12,11 @@ public class Main {
         currentConditionsDisplay.display();
 
         ForecastDisplay forecastDisplay = new ForecastDisplay();
-        forecastDisplay.getDaysAndMinMaxValuesTemperature();
+        forecastDisplay.update();
         forecastDisplay.display();
 
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(forecastDisplay);
+        statisticsDisplay.update();
         statisticsDisplay.display();
     }
 }
