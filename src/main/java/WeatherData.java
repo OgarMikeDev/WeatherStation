@@ -95,7 +95,6 @@ public class WeatherData implements Subject {
         }
     }
 
-
     @Override
     public void registerObserver(Observer observer) {
         observers.add(observer);
