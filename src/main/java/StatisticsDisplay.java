@@ -3,14 +3,16 @@ import java.util.ArrayList;
 public class StatisticsDisplay implements Observer, DisplayElement {
     private ForecastDisplay forecastDisplay;
     private double averageValueAllTemperatureAir;
-    private ArrayList<Double> listAllSortedTemperaturesAir;
+    private ArrayList<Integer> listMinTemperaturesAir;
+    private ArrayList<Integer> listMaxTemperaturesAir;
     private double minTemperatureAir;
     private double maxTemperatureAir;
 
     public StatisticsDisplay(ForecastDisplay forecastDisplay) {
         this.forecastDisplay = forecastDisplay;
         averageValueAllTemperatureAir = 0;
-        listAllSortedTemperaturesAir = new ArrayList<>();
+        listMinTemperaturesAir = forecastDisplay.getListMinTemperaturesAir();
+        listMaxTemperaturesAir = forecastDisplay.getListMaxTemperaturesAir();
         minTemperatureAir = 0;
         maxTemperatureAir = 0;
     }
@@ -25,48 +27,44 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         return averageValueAllTemperatureAir;
     }
 
-    public void sortedAllTemperaturesAir() {
-        listAllSortedTemperaturesAir = forecastDisplay.getListAllTemperaturesAir();
+    public void sortedAllTemperaturesAir(ArrayList<Integer> listMaxOrMinTemperaturesAir) {
         int i = 0;
-        int j = listAllSortedTemperaturesAir.size() - 1;
+        int j = listMaxOrMinTemperaturesAir.size() - 1;
         /*
         ВГАБ
         АБВГ
          */
-        for (; i < listAllSortedTemperaturesAir.size() - 2; i++) {
+        for (; i < listMaxOrMinTemperaturesAir.size() - 2; i++) {
             for (; j >= (i + 1); j--) {
-                double temp = listAllSortedTemperaturesAir.get(i);
-                if (listAllSortedTemperaturesAir.get(i).compareTo(listAllSortedTemperaturesAir.get(j)) > 0) {
-                    listAllSortedTemperaturesAir.set(i, listAllSortedTemperaturesAir.get(j));
-                    listAllSortedTemperaturesAir.set(j, temp
+                int temp = listMaxOrMinTemperaturesAir.get(i);
+                if (listMaxOrMinTemperaturesAir.get(i).compareTo(listMaxOrMinTemperaturesAir.get(j)) > 0) {
+                    listMaxOrMinTemperaturesAir.set(i, listMaxOrMinTemperaturesAir.get(j));
+                    listMaxOrMinTemperaturesAir.set(j, temp
                     );
                 }
             }
-            j = forecastDisplay.getListAllTemperaturesAir().size() - 1;
+            j = listMaxOrMinTemperaturesAir.size() - 1;
         }
     }
 
     public double getMinTemperatureAir() {
-        minTemperatureAir = listAllSortedTemperaturesAir.get(0);
+        minTemperatureAir = listMinTemperaturesAir.get(0);
         return minTemperatureAir;
     }
 
     public double getMaxTemperatureAir() {
-        maxTemperatureAir = listAllSortedTemperaturesAir.get(listAllSortedTemperaturesAir.size() - 1);
+        maxTemperatureAir = listMaxTemperaturesAir.get(listMaxTemperaturesAir.size() - 1);
         return maxTemperatureAir;
-    }
-
-    public ArrayList<Double> getListAllSortedTemperaturesAir() {
-        return listAllSortedTemperaturesAir;
     }
 
     @Override
     public void display() {
         getAverageValueAllTemperatureAir();
-        sortedAllTemperaturesAir();
         System.out.println("\nСтатистика!");
         System.out.println("Ср. знач. всех температур: " + getAverageValueAllTemperatureAir());
+        sortedAllTemperaturesAir(listMinTemperaturesAir);
         System.out.println("Минимальная температура: " + getMinTemperatureAir());
+        sortedAllTemperaturesAir(listMaxTemperaturesAir);
         System.out.println("Максимальная температура: " + getMaxTemperatureAir());
     }
 
