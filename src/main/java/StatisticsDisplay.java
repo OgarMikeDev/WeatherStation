@@ -40,7 +40,6 @@ public class StatisticsDisplay implements Observer, DisplayElement {
             }
             j = forecastDisplay.getListAllTemperaturesAir().size() - 1;
         }
-        System.out.println("Сорт. список всех темп." + listAllSortedTemperaturesAir);
     }
 
     @Override
