@@ -7,6 +7,9 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class ForecastDisplay implements Observer, DisplayElement {
+    private ArrayList<Double> listAllTemperaturesAir = new ArrayList<>();
+    private ArrayList<Integer> listMinTemperaturesAir = new ArrayList<>();
+    private ArrayList<Integer> listMaxTemperaturesAir = new ArrayList<>();
 
     public ArrayList<String> getDaysAndMinMaxValuesTemperature() {
         ArrayList<String> listDaysAndMinMaxValuesTemperature = new ArrayList<>();
@@ -54,6 +57,12 @@ public class ForecastDisplay implements Observer, DisplayElement {
                                     if (indexForDay == indexForMinTemperature &&
                                             indexForDay == indexForMaxTemperature &&
                                                 indexForMinTemperature == indexForMaxTemperature) {
+                                        double averageCurrentTemperatureAir = (
+                                                Integer.parseInt(minTemperature) + Integer.parseInt(maxTemperature)
+                                                ) / 2;
+                                        listAllTemperaturesAir.add(averageCurrentTemperatureAir);
+                                        listMinTemperaturesAir.add(Integer.parseInt(minTemperature));
+                                        listMaxTemperaturesAir.add(Integer.parseInt(maxTemperature));
                                         String currentDayAndMinMaxTemperature =
                                                 "Текущий день \"" + day + "\"" +
                                                         "; текущая минимальная температура \"" + minTemperature + "\"; " +
@@ -72,6 +81,18 @@ public class ForecastDisplay implements Observer, DisplayElement {
             ex.getMessage();
         }
         return listDaysAndMinMaxValuesTemperature;
+    }
+
+    public ArrayList<Double> getListAllTemperaturesAir() {
+        return listAllTemperaturesAir;
+    }
+
+    public ArrayList<Integer> getListMinTemperaturesAir() {
+        return listMinTemperaturesAir;
+    }
+
+    public ArrayList<Integer> getListMaxTemperaturesAir() {
+        return listMaxTemperaturesAir;
     }
 
     @Override

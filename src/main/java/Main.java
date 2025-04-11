@@ -14,5 +14,9 @@ public class Main {
         ForecastDisplay forecastDisplay = new ForecastDisplay();
         forecastDisplay.getDaysAndMinMaxValuesTemperature();
         forecastDisplay.display();
+
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(forecastDisplay);
+        statisticsDisplay.getAverageValueAllTemperatureAir();
+        statisticsDisplay.display();
     }
 }
