@@ -16,7 +16,6 @@ public class Main {
         forecastDisplay.display();
 
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(forecastDisplay);
-        statisticsDisplay.getAverageValueAllTemperatureAir();
         statisticsDisplay.display();
     }
 }

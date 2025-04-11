@@ -56,14 +56,18 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         return maxTemperatureAir;
     }
 
-
+    public ArrayList<Double> getListAllSortedTemperaturesAir() {
+        return listAllSortedTemperaturesAir;
+    }
 
     @Override
     public void display() {
+        getAverageValueAllTemperatureAir();
+        sortedAllTemperaturesAir();
         System.out.println("\nСтатистика!");
         System.out.println("Ср. знач. всех температур: " + getAverageValueAllTemperatureAir());
-//        System.out.println("Минимальная температура: " + getMinTemperatureAir());
-//        System.out.println("Максимальная температура: " + getMaxTemperatureAir());
+        System.out.println("Минимальная температура: " + getMinTemperatureAir());
+        System.out.println("Максимальная температура: " + getMaxTemperatureAir());
     }
 
     @Override
