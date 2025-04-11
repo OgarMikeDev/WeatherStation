@@ -4,11 +4,15 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     private ForecastDisplay forecastDisplay;
     private double averageValueAllTemperatureAir;
     private ArrayList<Double> listAllSortedTemperaturesAir;
+    private double minTemperatureAir;
+    private double maxTemperatureAir;
 
     public StatisticsDisplay(ForecastDisplay forecastDisplay) {
         this.forecastDisplay = forecastDisplay;
         averageValueAllTemperatureAir = 0;
         listAllSortedTemperaturesAir = new ArrayList<>();
+        minTemperatureAir = 0;
+        maxTemperatureAir = 0;
     }
 
     public double getAverageValueAllTemperatureAir() {
@@ -42,10 +46,24 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         }
     }
 
+    public double getMinTemperatureAir() {
+        minTemperatureAir = listAllSortedTemperaturesAir.get(0);
+        return minTemperatureAir;
+    }
+
+    public double getMaxTemperatureAir() {
+        maxTemperatureAir = listAllSortedTemperaturesAir.get(listAllSortedTemperaturesAir.size() - 1);
+        return maxTemperatureAir;
+    }
+
+
+
     @Override
     public void display() {
         System.out.println("\nСтатистика!");
-        System.out.println("Ср. знач. всех температур: " + averageValueAllTemperatureAir);
+        System.out.println("Ср. знач. всех температур: " + getAverageValueAllTemperatureAir());
+//        System.out.println("Минимальная температура: " + getMinTemperatureAir());
+//        System.out.println("Максимальная температура: " + getMaxTemperatureAir());
     }
 
     @Override
